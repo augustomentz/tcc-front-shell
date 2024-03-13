@@ -13,8 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tcc-front-shell';
-  component = signal<Type<any>>(null);
+  cart = signal<Type<any>>(null);
 
   async ngOnInit() {
       const result: any = await loadRemoteModule({
@@ -23,6 +22,6 @@ export class AppComponent {
         exposedModule : './Component'
       })
 
-      this.component.set(result.AppComponent)
+      this.cart.set(result.AppComponent)
     }
 }

@@ -1,7 +1,11 @@
 <app-menu></app-menu>
 
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="main">
+    <router-outlet></router-outlet>
+  </div>
 
-<!-- <div>
-  <ng-container *ngComponentOutlet="component()"></ng-container>
-</div> -->
+  <div class="cart">
+    <ng-container *ngComponentOutlet="cart()"></ng-container>
+  </div>
+</div>

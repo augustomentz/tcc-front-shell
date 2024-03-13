@@ -1,0 +1,17 @@
+@import 'variables';
+
+:host {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 30%;
+
+    .main {
+      height: calc(100vh - 61px);
+      background: $black-300;
+    }
+
+    .cart {
+      background: $black-100;
+    }
+  }
+}

@@ -4,14 +4,6 @@ import { environment } from 'src/environments/environment';
 
 export const routes: Routes = [
   {
-    path: 'carrinho',
-    loadComponent: () => loadRemoteModule({
-      remoteEntry : environment.mfe.carrinho,
-      remoteName : 'tcc-front-carrinho',
-      exposedModule : './Component'
-    }).then(m => (m.AppComponent)).catch(err => console.log(err))
-  },
-  {
     path: 'produtos',
     loadComponent: () => loadRemoteModule({
       remoteEntry : environment.mfe.produtos,
