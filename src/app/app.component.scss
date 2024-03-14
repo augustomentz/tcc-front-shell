@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 30%;
 
     .main {
-      height: calc(100vh - 61px);
+      min-height: calc(100vh - 61px);
       background: $black-300;
     }
 
